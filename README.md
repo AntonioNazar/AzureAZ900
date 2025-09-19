@@ -1,4 +1,9 @@
 # AzureAZ900
+TODO: 
+- Artigo Linkedin de nuvem
+- Artigo DIO
+- Artigo DIO de recursos na microsoft para aprofundar o conhecimento
+
 
 # Computação em nuvem: domínio do objetivo
 
@@ -306,4 +311,112 @@ Habilite o acesso ao portal do Azure e o controle de acesso aos recursos.
 É um serviço de monitoramento que fornece proteção contra ameaças nos datacenters do Azure e locais.
 
 # Gerenciamento e Governança
+
+## Fatores que podem afetar o custo
+
+- Uso
+- Manutenção
+- Área geográfica (imposto)
+- Tráfego de rede
+- Assinatura
+
+
+A própria microsoft tem uma calculadora de preços
+
+![image](https://hackmd.io/_uploads/HJnJg4coee.png)
+
+### Marcas
+
+Fornecem metadados aos recursos do Azure.
+
+Organizam os recursos em uma taxonomia de maneira lógica.
+
+Consistem em um par nome-valor.
+
+Muito úteis para reunir informação de cobrança.
+
+# Computação em nuvem: domínio do objetivo
+
+## Azure Policy
+
+Ajuda a impor padrões organizacionais e a avaliar a conformidade em escala.
+
+Ele fornece governança e consistência de recursos com conformidade regulatória, segurança, custo e gerenciamento.
+
+Fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento.
+
+Ela não muda os recursos que foram criadas antes dela. (Non-compliant)
+
+Os recursos que precisam ser modificados para funcionar a política. (remediation)
+
+Caso tudo esteja dentros dos padrões. (compliant)
+
+## Bloqueios de recursos
+
+Serve para proteger os recursos do Azure de exclusão ou modificação acidental.
+
+Gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais dentro do Portal do Azure.
+
+## Portal de confiança do Serviço
+
+Portal que identifica todas as regras que a Microsoft utiliza. Link aberto ao público que verificamos todos os protocolos utilizados.
+
+## Microsoft Purview
+
+É uma família de governça, risco e conformidade de dados que ajuda você a obter uma única exibição unificada em seus dados. O Microsoft Purview reúne insights sobre seus dados locais, multinuvem e de software como serviço.
+
+# Ferramentas de gerenciamento e implantação - domínio de objetivo
+
+Algumas ferramentas para interagir com o Azure:
+
+- Portal do Azure
+- Azure PowerShell
+- Azure Cloud Shell
+- Interface de Linha de Comando (CLI)
+
+## Azure Arc
+
+Extensão de gerenciamento do Azure para recursos fora do Azure. (local, várias nuvens, borda)
+
+## ARM (Azure Resource Manager)
+
+Fornece uma camada de gerenciamento que permite criar, atualizar e excluir recursos na assinatura do Azure.
+
+Os modelos ARM são arquivos JSON (JavaScript Object Notation) que podem ser usados para criar e implantar a infraestrutura do Azure sem a necessidade de escrever comandos de programação.
+
+A Microsoft criou um modelo de linguagem chamado Bicep, com foco em automação.
+
+# Bicep
+
+TODO:
+
+É uma linguagem específica de domínio (DSL) que usa sintaxe declarativa para implantar recursos apenas dentro do Azure.
+
+# Ferramentas de gerenciamento do Azure - domínio de objetivo
+
+## Assistente do Azure
+
+Analisa recursos implantados do Azure e faz recomendações com base na práticas recomendadas para otimizar as implantações Azure.
+
+Analisa:
+- Confiabilidade
+- Segurança
+- Desempenho
+- Custo
+- Excelência operacional
+
+
+## Integridade do Serviço do Azure
+
+É uma coleção de serviços que mantêm você informado sobre o status geral do Azure, status de serviço que podem afetar você e o status de recurso específico que está afetando você.
+
+Status do Azure: Dá uma visão global de integridade de todos os serviços Azure em todas as regiões.
+
+Integridade do serviço: exibição focada apenas nos serviços e regiões que você está usando. Se um serviço estiver enfrentando um problema em uma região que você não está usando, ele não aprecerá aqui.
+
+Resource Health: exibição personalizadas dos recursos reais do Azure. Ele fornece informações sobre a integridade de seus recursos de nuvem individuais.
+
+## Azure Monitor
+
+Maximiza a disponibilidade e o desempenho de aplicativos e serviços colentando, analisando e tomando decisões com base na telemetria da nuvem e de ambientes locais.
 
