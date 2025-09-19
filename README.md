@@ -1,9 +1,4 @@
 # AzureAZ900
-TODO: 
-- Artigo Linkedin de nuvem
-- Artigo DIO
-- Artigo DIO de recursos na microsoft para aprofundar o conhecimento
-
 
 # Computação em nuvem: domínio do objetivo
 
